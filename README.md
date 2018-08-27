@@ -15,6 +15,13 @@ Simply use the static function ```Yuv.toMat```
 Mat mat = Yuv.toMat(image)
 ```
 
+### Clipping the image
+This library supports efficient clipping of the image before converting. 
+Just pass a clip to the function:
+
+```kotlin
+val mat = image.mat(Clip(left=20, top=20, right=40, bottom=40))
+```
 
 ## Get the the dependency
 
