@@ -1,14 +1,20 @@
-package com.quickbirdstudios.yuv2mat
+package com.quickbirdstudios.yuv2mat.internal
 
 import android.media.Image
-import com.quickbirdstudios.yuv2mat.internal.clip
+import com.quickbirdstudios.yuv2mat.Clip
 import java.nio.ByteBuffer
+
+/*
+################################################################################################
+INTERNAL API
+################################################################################################
+*/
 
 /**
  * Abstraction for yuv_420_888 images provided by the camera preview
  */
 
-interface Yuv420888Image {
+internal interface Yuv420888Image {
     val width: Int
     val height: Int
     val yPlane: ByteBuffer

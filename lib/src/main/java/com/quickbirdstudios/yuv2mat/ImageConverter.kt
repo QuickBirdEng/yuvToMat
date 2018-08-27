@@ -13,9 +13,13 @@ PUBLIC API
 interface ImageConverter {
     operator fun invoke(image: Image, clip: Clip? = null): Mat
 
-    companion object
+    companion object {
+        @JvmName("create")
+        operator fun invoke(): ImageConverter {
+            return PreClipYuvToMatConverter()
+        }
+    }
 }
 
-operator fun ImageConverter.Companion.invoke(): ImageConverter {
-    return PreClipYuvToMatConverter()
-}
+
+

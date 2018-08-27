@@ -3,8 +3,6 @@ package com.quickbirdstudios.yuv2mat.internal
 import android.media.Image
 import com.quickbirdstudios.yuv2mat.Clip
 import com.quickbirdstudios.yuv2mat.ImageConverter
-import com.quickbirdstudios.yuv2mat.Yuv420888Image
-import com.quickbirdstudios.yuv2mat.invoke
 import org.opencv.core.CvType
 import org.opencv.core.Mat
 import org.opencv.imgproc.Imgproc
