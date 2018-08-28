@@ -1,8 +1,9 @@
-#YuvToMat
-
+# YuvToMat
+High-performance library for converting YUV_420_888 images from Android's Camera v2 API to OpenCV Mats. 
+  
 ## Usage
 ### Kotlin
-Simply use the extension function on android.media.Image! 
+Simply use the extension function on android.media.Image.  
 
 ```kotlin
 val mat = image.toMat()
@@ -42,3 +43,5 @@ dependencies {
 
 }
 ```
+
+If you encounter any issues with this library, please submit an issue. We'll come back to you as soon as possible.
