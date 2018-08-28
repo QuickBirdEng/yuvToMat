@@ -1,5 +1,5 @@
-# YuvToMat
-High-performance library for converting YUV_420_888 images from Android's Camera v2 API to OpenCV Mats. 
+# YuvToMat: Performant YUV_420_888 Android-Camera-Image to OpenCV-Mat Conversion
+High-performance library for converting YUV_420_888 images from Android's Camera v2 API to OpenCV-Mats. 
   
 ## Usage
 ### Kotlin
