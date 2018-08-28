@@ -1,5 +1,6 @@
-# YuvToMat: Performant YUV_420_888 Android-Camera-Image to OpenCV-Mat Conversion
-High-performance library for converting YUV_420_888 images from Android's Camera v2 API to OpenCV-Mats. 
+# YuvToMat
+### YUV_420_888 Image to OpenCV RGB Mat Conversion
+High-performance library for converting YUV_420_888 images from Android's Camera v2 API to OpenCV Mats. The resulting Mat contains RGB pixels.
   
 ## Usage
 ### Kotlin
