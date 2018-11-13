@@ -40,7 +40,7 @@ Also include the kotlin standard library for non-kotlin projects
 ```
 dependencies {
     ...
-    implementationn "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 }
 ```
