@@ -17,7 +17,7 @@ ext {
     siteUrl = 'http://quickbirdstudios.com'
 
 
-    libraryVersion = '1.0.0-RC.0'
+    libraryVersion = '1.0.0'
 
     developerId = 'quickbirdstudios'
     developerName = 'QuickBird Studios GmbH'
@@ -46,6 +46,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/lib_release.kotlin_module'
+        exclude 'META-INF/main.kotlin_module'
     }
 }
 
