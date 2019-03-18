@@ -1,14 +1,14 @@
-package com.quickbirdstudios.yuv2mat.internal
+package com.quickbirdstudios.yuv2mat
 
 import java.nio.ByteBuffer
 
 /*
 ################################################################################################
-INTERNAL API
+PUBLIC API
 ################################################################################################
 */
 
-internal fun ByteBuffer.clip(range: IntRange): ByteBuffer {
+fun ByteBuffer.clip(range: IntRange): ByteBuffer {
     val duplicate = this.duplicate()
     duplicate.position(range.start)
     duplicate.limit(range.endInclusive + 1)

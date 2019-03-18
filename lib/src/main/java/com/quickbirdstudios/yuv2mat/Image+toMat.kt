@@ -1,11 +1,8 @@
-@file:JvmName("Yuv")
-
-package com.quickbirdstudios.yuv2mat.extensions
+package com.quickbirdstudios.yuv2mat
 
 import android.media.Image
-import com.quickbirdstudios.yuv2mat.Clip
-import com.quickbirdstudios.yuv2mat.ImageConverter
 import org.opencv.core.Mat
+import android.graphics.ImageFormat
 
 /*
 ################################################################################################
@@ -13,7 +10,12 @@ PUBLIC API
 ################################################################################################
 */
 
-@JvmOverloads
-fun Image.toMat(clip: Clip? = null): Mat {
-    return (ImageConverter())(this, clip)
+/**
+ * Most convenient way of converting Yuv420_888 frames of Android into
+ * an OpenCV RGB [Mat]
+ *
+ * @see ImageFormat.YUV_420_888
+ */
+fun Image.rgb(): Mat {
+    return YuvImage(this).toRgb()
 }

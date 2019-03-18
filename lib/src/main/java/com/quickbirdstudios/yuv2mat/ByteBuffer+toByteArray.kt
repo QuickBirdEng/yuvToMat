@@ -1,13 +1,17 @@
 package com.quickbirdstudios.yuv2mat
 
+import java.nio.ByteBuffer
+
 /*
 ################################################################################################
-PUBLIC API
+INTERNAL API
 ################################################################################################
 */
 
-data class Clip(
-    val left: Int,
-    val top: Int,
-    val right: Int,
-    val bottom: Int)
+internal fun ByteBuffer.toByteArray(): ByteArray {
+    return ByteArray(limit()).apply {
+        val source = duplicate()
+        source.position(0)
+        source.get(this)
+    }
+}
