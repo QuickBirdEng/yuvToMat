@@ -1,6 +1,5 @@
 package com.quickbirdstudios.yuv2mat
 
-import com.roche.greendot.pipeline.yuv.YuvN12Image
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

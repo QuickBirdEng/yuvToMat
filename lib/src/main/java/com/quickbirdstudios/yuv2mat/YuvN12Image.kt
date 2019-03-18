@@ -1,6 +1,5 @@
-package com.roche.greendot.pipeline.yuv
+package com.quickbirdstudios.yuv2mat
 
-import com.quickbirdstudios.yuv2mat.*
 import org.opencv.core.CvType
 import org.opencv.core.Mat
 import org.opencv.imgproc.Imgproc

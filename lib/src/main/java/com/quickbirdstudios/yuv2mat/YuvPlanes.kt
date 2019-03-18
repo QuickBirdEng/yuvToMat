@@ -1,4 +1,4 @@
-package com.roche.greendot.pipeline.yuv
+package com.quickbirdstudios.yuv2mat
 
 import android.media.Image
 

@@ -2,7 +2,6 @@ package com.quickbirdstudios.yuv2mat
 
 import android.graphics.ImageFormat
 import android.media.Image
-import com.roche.greendot.pipeline.yuv.YuvPlanes
 import java.nio.ByteBuffer
 
 /*
@@ -48,4 +47,13 @@ data class Yuv(
 
     val rows = this.height
     val cols = this.width
+
+
+    /**
+     * For java API call site
+     */
+    companion object {
+        @JvmStatic
+        fun rgb(image: Image) = image.rgb()
+    }
 }

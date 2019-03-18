@@ -7,7 +7,7 @@ High-performance library for converting YUV_420_888 images from Android's Camera
 Simply use the extension function on android.media.Image.  
 
 ```kotlin
-val mat = image.toMat()
+val mat = image.rgb()
 ```
 
 ### Java

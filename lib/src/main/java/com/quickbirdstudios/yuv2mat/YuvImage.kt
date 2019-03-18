@@ -2,7 +2,6 @@ package com.quickbirdstudios.yuv2mat
 
 import android.graphics.ImageFormat
 import android.media.Image
-import com.roche.greendot.pipeline.yuv.YuvN12Image
 import org.opencv.core.Mat
 
 /*
