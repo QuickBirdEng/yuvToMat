@@ -77,12 +77,12 @@ task sourceJar(type: Jar) {
 publishing {
     publications {
         aar(MavenPublication) {
-            groupId "$publishedGroupId"
+            groupId = "$publishedGroupId"
             version = "$libraryVersion"
-            artifactId "$bintrayName"
+            artifactId = "$bintrayName"
 
             artifact("$buildDir/outputs/aar/lib.aar")
-            artifact sourceJar
+            artifact(sourceJar)
         }
     }
 }
@@ -93,22 +93,18 @@ bintray {
     key = "$bintray_apikey"
     publications = ['aar']
     pkg {
-        userOrg = bintrayOrg
-        repo = bintrayRepo
-        name = bintrayName
-        desc = libraryDescription
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = allLicenses
+        userOrg = "$bintrayOrg"
+        repo = "$bintrayRepo"
+        name = "$bintrayName"
+        desc = "$libraryDescription"
+        websiteUrl = "$siteUrl"
+        vcsUrl = "$gitUrl"
+        licenses = "$allLicenses"
         publish = true
         publicDownloadNumbers = true
         version {
             name = "$libraryVersion"
             desc = "$libraryVersion"
-            gpg {
-                sign = false //Determines whether to GPG sign the files. The default is false
-                passphrase = "$bintray_gpg_password"
-            }
         }
     }
 }
