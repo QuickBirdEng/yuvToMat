@@ -36,6 +36,9 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -48,8 +51,10 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    testImplementation 'junit:junit:4.12'
+    
     implementation "com.quickbirdstudios:opencv:3.4.1"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 }
 
 
@@ -70,7 +75,7 @@ publishing {
             version = "$libraryVersion"
             artifactId "$bintrayName"
 
-            artifact("$buildDir/outputs/aar/lib-release.aar")
+            artifact("$buildDir/outputs/aar/lib.aar")
             artifact sourceJar
         }
     }
