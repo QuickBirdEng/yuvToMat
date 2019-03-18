@@ -17,7 +17,7 @@ ext {
     siteUrl = 'http://quickbirdstudios.com'
 
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '1.0.0-RC.0'
 
     developerId = 'quickbirdstudios'
     developerName = 'QuickBird Studios GmbH'
