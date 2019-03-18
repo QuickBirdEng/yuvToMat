@@ -14,7 +14,7 @@ val mat = image.rgb()
 Simply use the static function ```Yuv.toMat```
 
 ```java
-Mat mat = Yuv.toMat(image)
+Mat mat = Yuv.rgb(image)
 ```
 
 ### Clipping the image
@@ -22,7 +22,10 @@ This library supports efficient clipping of the image before converting.
 Just pass a clip to the function:
 
 ```kotlin
-val mat = image.mat(Clip(left=20, top=20, right=40, bottom=40))
+val yuv = YuvImage(image).clip(left=20, top=20, right=40, bottom=40)
+val yuv = YuvImage(image).with(YuvImage.Clip(left=20, top=20, right=40, bottom=40))
+val yuv = YuvImage(image) with YuvImage.Clip(left=20, top=20, right=40, bottom=40)
+val rgb: Mat = yuv.rgb()
 ```
 
 ## Get the the dependency
@@ -31,7 +34,7 @@ val mat = image.mat(Clip(left=20, top=20, right=40, bottom=40))
 ```
 dependencies {
     ...
-    implementation "com.quickbirdstudios:yuvtomat:0.1.0"
+    implementation "com.quickbirdstudios:yuvtomat:1.1.0"
 }
 ```
 
