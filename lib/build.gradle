@@ -63,10 +63,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
 }
 
-
-apply plugin: 'com.github.dcendents.android-maven'
-group = publishedGroupId                               // Maven Group ID for the artifact
-
+group = publishedGroupId // Maven Group ID for the artifact
 
 apply plugin: 'com.jfrog.bintray'
 task sourceJar(type: Jar) {
