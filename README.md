@@ -1,6 +1,6 @@
 # YuvToMat
 
-⚠️ # DEPRECATED 
+# ⚠️ DEPRECATED 
 This library is no longer maintained and will not be updated.
 
 ### YUV_420_888 Image to OpenCV RGB Mat Conversion
