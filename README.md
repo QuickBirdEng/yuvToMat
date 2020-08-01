@@ -1,6 +1,13 @@
 # ⚠️ DEPRECATED 
 This library is no longer maintained and will not be updated.
 
+If you need converting to OpenCV Mat - take a look at official [OpenCV solution](
+https://github.com/opencv/opencv/blob/master/modules/java/generator/android-21/java/org/opencv/android/JavaCamera2View.java#L344).
+
+If you need Bitmap and you do not want to add any library into you project - RenderScript soulution in [Google's repo android/camera-samples](https://github.com/android/camera-samples/blob/2a6b5bd9b8a8d732536e65d1716c2aed1f879101/CameraUtils/lib/src/main/java/com/example/android/camera/utils/YuvToRgbConverter.kt).
+
+If you need correct ByteBuffer for futher processing with neural network engine (for instance [MNN](https://github.com/alibaba/MNN/)) - [single file snippet](https://github.com/gordinmitya/yuv2buf).
+
 
 # YuvToMat
 ### YUV_420_888 Image to OpenCV RGB Mat Conversion
